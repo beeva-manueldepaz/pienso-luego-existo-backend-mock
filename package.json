@@ -1,0 +1,31 @@
+{
+  "name": "pienso-luego-existo-backend-mock",
+  "version": "0.0.1",
+  "description": "mock services",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beeva-manueldepaz/pienso-luego-existo-backend-mock.git"
+  },
+  "keywords": [
+    "mock",
+    "rest",
+    "piensos"
+  ],
+  "author": "fernando.canto@beeva.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beeva-manueldepaz/pienso-luego-existo-backend-mock/issues"
+  },
+  "homepage": "https://github.com/beeva-manueldepaz/pienso-luego-existo-backend-mock#readme"
+}
