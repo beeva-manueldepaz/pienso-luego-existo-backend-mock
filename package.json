@@ -6,7 +6,8 @@
   "private": true,
   "dependencies": {
     "body-parser": "^1.14.2",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "lodash": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {
