@@ -1,4 +1,7 @@
 var express = require('express');
+var _ = require('lodash');
+var J = require('jmespath');
+
 var router = express.Router();
 
 var piensos = [
@@ -17,19 +20,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
- 
-    var len = piensos.length;
-	var resul = "Elemento no encontrado";    
-    for(var i = 0; i<len; i++){
-        var item = piensos[i];
 
-        if(item.id === parseInt(req.params.id)) {
-        	resul = item;
-        	break;
-        };
-    }
+	var id = parseInt(req.params.id);
+	var reply = _.find(piensos, {pienso:{id:id}}) || { pienso: {}} ;
 
-    res.status(200).send(resul);
+	res.status(200).send(reply);
 
 });
 
